@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export default function Entry(props){
     return (
 
@@ -9,7 +10,7 @@ export default function Entry(props){
                 <a href={props.googleMapsLink}>
                 view on Google maps
                 </a>
-                <h2 className="entry-title">Mount Fuji</h2>
+                <h2 className="entry-title">{props.title}</h2>
                 <p className="trip-dates">{props.dates}</p>
                 <p className="entry-text">
                     {props.text}
